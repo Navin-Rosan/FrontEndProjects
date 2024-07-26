@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(228, 33%, 97%);
+    overflow-y: scroll;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.cards{
+    width: 50%;
+    margin: 5vh auto ;
+}
+
+.cmt-card{
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    border-radius: 10px;
+}
+.cmt-reply-card{
+    width: 80%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    /* border-left: 2px solid hsl(211, 10%, 45%); */
+    border-radius: 10px;
+}
+.add-reply-card{
+    width: 80%;
+    margin-left: auto;
+}
+
+.range{
+    height: 100%;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: hsl(228, 33%, 97%);
+    text-align: center;
+    border-radius: 5px;
+}
+.num{
+    margin: 80% 0 60%;
+    color: hsl(238, 40%, 52%);
+    font-size: 12px;
+    font-weight: bold;
+}
+.plus img{
+    width: 12px;
+}
+.minus img{
+    width: 12px;
+}
+
+.cmt{
+    width: 100%;
+}
+.cmt .head{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.cmt .head .profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile h3{
+    color: hsl(212, 24%, 26%);
+    font-size: 14px;
+}
+.profile p{
+    color: hsl(211, 10%, 45%);
+    word-spacing: -1px;
+    font-size: 14px;
+}
+.profile span{
+    padding: 3px 6px;
+    background-color: hsl(238, 40%, 52%);
+    color: hsl(228, 33%, 97%);
+    font-size: 12px;
+}
+.profile img{
+    width: 2em;
+}
+
+
+.reply{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.reply div{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.reply div img{
+    width: 14px;
+    color: hsl(358, 79%, 66%);
+}
+
+.reply h3{
+    font-size: 14px;
+    color: hsl(238, 40%, 52%);
+    text-transform: capitalize;
+}
+.reply div p{
+    font-size: 14px;
+    font-weight: bold;
+    color: hsl(358, 79%, 66%);
+}
+.reply img{
+    width: 14px;
+    color: hsl(238, 40%, 52%);
+}
+.body{
+    display: flex;   
+    flex-direction: column;
+    
+}
+.body span::before{
+    content: '@';
+}
+.body span{
+    margin-right: 5px;
+    display: inline-block;
+    color: hsl(238, 40%, 52%);
+    font-weight: bold;
+    font-size: 14px;
+}
+.body p{
+    color: hsl(211, 10%, 45%);
+    font-size: 16px;
+}
+.body textarea{
+    /* width: 100%; */
+    flex-grow: 1;
+    height: 5em;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 16px;
+    border: 2px solid hsl(228, 33%, 97%);
+    border-radius: 5px;
+    resize: none;
+}
+.body button{
+    width: 20%;
+    /* flex-grow: 1; */
+    margin-left: auto;
+    padding: 10px 0;
+    background-color: hsl(238, 40%, 52%);
+    color: hsl(228, 33%, 97%);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+}
+.body button:hover{
+    cursor: pointer;
+    opacity: .6;
+}
+.add-cmt{
+    /* margin-top: auto; */
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+}
+.add-cmt img{
+    width: 2em;
+    height: 2em;
+}
+.add-cmt textarea{
+    flex-grow: 1;
+    height: 5em;
+    margin: auto 10px;
+    padding: 20px;
+    font-size: 16px;
+    border: 2px solid hsl(228, 33%, 97%);
+    border-radius: 5px;
+    resize: none;
+}
+.add-cmt textarea:hover{
+    border: 2px solid hsl(211, 10%, 45%);
+    cursor: pointer;
+}
+.text::placeholder{
+    color: hsl(358, 79%, 66%);
+}
+.add-cmt button{
+    height: 100%;
+    padding: 10px 20px;
+    background-color: hsl(238, 40%, 52%);
+    color: hsl(228, 33%, 97%);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+}
+.add-cmt button:hover{
+    cursor: pointer;
+    opacity: .5;
+}
